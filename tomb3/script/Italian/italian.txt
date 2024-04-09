@@ -4,22 +4,22 @@ INVENTARIO
 OPZIONI
 OGGETTI
 GAME OVER
-Carica partita
-Salva partita
-Nuova partita
-Ricomincia livello
-Esci al titolo
-Esci dal demo
-Esci dalla partita
-Scegli livello
-Salva posizione
-Seleziona dettaglio
+Carica Partita
+Salva Partita
+Nuova Partita
+Ricomincia Livello
+Torna ai Titoli
+Esci dal Demo
+Esci dal Gioco
+Scegli Livello
+Salva Posizione
+Seleziona Dettaglio
 Alto
 Medio
 Basso
-Camminare
-Rotolare
-Correre
+Cammina
+Capriola
+Corri
 Sinistra
 Destra
 Indietro
@@ -27,64 +27,64 @@ Accucciarsi
 ?
 Sprint
 ?
-Guardare
-Saltare
+Guarda
+Salta
 Azione
-Estrarre arma
+Estrai Arma
 ?
 Inventario
 Razzo
 Sprint
 Statistiche
 Pistole
-Fucile a pompa
-Aquila del deserto
+Fucile a Pompa
+Desert Eagle
 Uzi
 Arpione
 MP5
 Lanciarazzi
 Lanciagranate
 Razzo
-Proiettili per pistola
-Cartucce per fucile a pompa
-Proiettili per aquila del deserto
-Proiettili per uzi
+Caricatore Pistola
+Cartucce Fucile a Pompa
+Caricatore Desert Eagle
+Caricatore Uzi
 Arpioni
-Proiettili per MP5
+Caricatore MP5
 Razzi
 Granate
-Piccolo pronto soccorso
-Grande pronto soccorso
+Kit Medico Piccolo
+Kit Medico Grande
 Oggetto
 Enigma
 Tasto
 Partita
 Casa di Lara
 CARICAMENTO
-Cronometraggio
-Segreti scoperti
+Tempo Impiegato
+Segreti Scoperti
 Locazione
-Nemici uccisi
-Munizioni utilizzate
-Bersagli colpiti
-Salvataggi effettuati
-Distanza percorsa
-Pronto soccorso utilizzati
+Nemici Uccisi
+Munizioni Utilizzate
+Bersagli Colpiti
+Salvataggi Effettuati
+Distanza Percorsa
+Kit Medici Utilizzati
 Versione Release 1.0
 Nessuno
 Fine
-MIGLIORI TEMPI
+TEMPI MIGLIORI
 Nessun tempo
 N/A
-Posizione attuale
-Statistiche finali
+Posizione Attuale
+Statistiche Finali
 di
-La storia...
+Un po' di storia...
 Pietra Infada
 Elemento 115
 L'Occhio di Iside
 Pugnale Ora
-Cristallo di salvataggio
+Cristallo di Salvataggio
 Londra
 Nevada
 Pacifico del Sud
@@ -99,31 +99,31 @@ end:
 
 pc_strings:
 
-Livelli di dettaglio
-Demo
-Sonoro
+Livello dei Dettagli
+Modalit)a Demo
+Suoni
 Comandi
 Gamma
-Impostazione del volume
-Tasti di comando
+Volume
+Tasti di Comando
 Il file potrebbe non essere stato salvato!
 Riprovare?
 Si
 No
-Salvataggio completato!
+Salvataggio Completato!
 Nessuna partita salvata!
 Nessuna valida
-Salva partita?
+Salvare la partita?
 - SLOT VUOTO -
-OFF
-ON
-Impostazione della scheda sonora
+SPENTO
+ACCESO
+Impostazioni Scheda Audio
 Tasti predefiniti
 DOZY
-Opzioni dettaglio
+Opzioni Dettaglio
 Risoluzione
 ZBuffer
-Filter
+Filtro
 Dithering
 Alpha
 Gamma
