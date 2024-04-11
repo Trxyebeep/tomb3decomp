@@ -105,7 +105,7 @@ Suoni
 Comandi
 Gamma
 Volume
-Tasti di Comando
+Schema Personalizzato
 Il file potrebbe non essere stato salvato!
 Riprovare?
 Si
