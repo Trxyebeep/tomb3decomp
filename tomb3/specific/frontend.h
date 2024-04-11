@@ -8,5 +8,5 @@ void S_DrawScreenBox(long x, long y, long z, long w, long h, long sprnum, GOURAU
 void S_DrawScreenFBox(long x, long y, long z, long w, long h, long c, GOURAUD_FILL* grdptr, ushort f);
 void S_FinishInventory();
 void S_Wait(long nFrames, long skip);
-long S_PlayFMV(char* name);
-long S_IntroFMV(char* name1, char* name2);
+long S_PlayFMV(LPCTSTR fileName);
+long S_IntroFMV(LPCTSTR fileName1, LPCTSTR fileName2);

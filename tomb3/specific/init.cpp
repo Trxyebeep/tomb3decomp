@@ -34,8 +34,7 @@ float wibble_table[32];
 
 void ShutdownGame()
 {
-	RPC_close();
-	FreeWinPlay();
+	RPC_close();	
 	GlobalFree(TLVertexBuffer);
 	GlobalFree(TLUnRollBuffer);
 	ACMClose();
@@ -55,6 +54,7 @@ void ShutdownGame()
 	DS_Finish();
 	WinFreeDX(1);
 	DXFreeDeviceInfo(&App.DeviceInfo);
+	FMV_Cleanup();
 
 #ifdef DO_LOG
 	if (logF)

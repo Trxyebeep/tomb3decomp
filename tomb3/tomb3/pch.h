@@ -29,5 +29,6 @@
 #include <mmeapi.h>
 #include <ctime>
 #include <MSAcm.h>
+#include <shlwapi.h>
 
 #endif //PCH_H

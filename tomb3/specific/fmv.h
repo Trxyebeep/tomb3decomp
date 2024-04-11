@@ -1,11 +1,10 @@
 #pragma once
 #include "../global/types.h"
 
-bool LoadWinPlay();
-void FreeWinPlay();
-long FMV_Play(char* name);
-long FMV_PlayIntro(char* name1, char* name2);
-void WinPlayFMV(const char* name, bool play);
-void WinStopFMV(bool play);
+bool __cdecl FMV_Init();
+void __cdecl FMV_Cleanup();
+bool __cdecl PlayFMV(LPCTSTR fileName);
+bool __cdecl IntroFMV(LPCTSTR fileName1, LPCTSTR fileName2);
+void __cdecl WinPlayFMV(LPCTSTR fileName, bool isPlayback);
 
 extern long fmv_playing;

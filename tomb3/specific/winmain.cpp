@@ -282,10 +282,10 @@ int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmd
 		return 0;
 	}
 
-	App.WinPlayLoaded = LoadWinPlay();
+	App.FFPlayLoaded = FMV_Init();
 
-	if (!App.WinPlayLoaded)
-		MessageBox(0, "Failed to load WinPlay", "tomb3", 0);
+	if (!App.FFPlayLoaded)
+		MessageBox(0, "Failed to load FFPlay", "tomb3", 0);
 
 	SetWindowPos(App.WindowHandle, 0, App.rScreen.left, App.rScreen.top, 0, 0, SWP_NOSIZE | SWP_NOZORDER);
 	desktop = GetDesktopWindow();

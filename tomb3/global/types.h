@@ -1446,7 +1446,7 @@ struct WINAPP
 	RECT rViewport;
 	ulong WindowStyle;
 	bool Windowed;
-	bool WinPlayLoaded;
+	bool FFPlayLoaded;
 	volatile bool bFocus;
 	long nUVAdd;
 #if (DIRECT3D_VERSION < 0x900)
