@@ -190,9 +190,9 @@ void S_Wait(long nFrames, long skip)
 }
 
 long S_PlayFMV(LPCTSTR fileName) {
-	return PlayFMV(fileName);
+	return FMV_Play(fileName);
 }
 
 long S_IntroFMV(LPCTSTR fileName1, LPCTSTR fileName2) {
-	return IntroFMV(fileName1, fileName2);
+	return FMV_PlayIntro(fileName1, fileName2);
 }

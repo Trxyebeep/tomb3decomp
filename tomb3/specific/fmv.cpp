@@ -6,6 +6,7 @@
 #include "input.h"
 #include "audio.h"
 #include "../tomb3/tomb3.h"
+#include "../game/inventry.h"
 
 long fmv_playing;
 
@@ -29,7 +30,7 @@ static const char videoExts[][4] = {
 	"RPL",
 };
 
-static bool FFplayInit() {
+bool __cdecl FMV_Init() {
 	if (hFFplay != NULL) {
 		return true;
 	}
@@ -62,15 +63,6 @@ static bool FFplayInit() {
 	return true;
 }
 
-bool __cdecl FMV_Init() {
-	if (FFplayInit()) {
-		return true;
-	}
-	else {
-		return false;
-	}
-}
-
 void __cdecl FMV_Cleanup() {
 	if (hFFplay != NULL) {
 		ffplay_cleanup();
@@ -79,7 +71,7 @@ void __cdecl FMV_Cleanup() {
 	}
 }
 
-bool __cdecl PlayFMV(LPCTSTR fileName) {
+bool __cdecl FMV_Play(LPCTSTR fileName) {
 	LPCTSTR fullPath;
 
 	if (!App.FFPlayLoaded)
@@ -91,7 +83,7 @@ bool __cdecl PlayFMV(LPCTSTR fileName) {
 	WinFreeDX(0);
 
 	fullPath = GetFullPath(fileName);
-	WinPlayFMV(fullPath, true);
+	FFPlayFMV(fullPath, true);
 
 	fmv_playing = 0;
 	if (!GtWindowClosed)
@@ -101,7 +93,7 @@ bool __cdecl PlayFMV(LPCTSTR fileName) {
 	return GtWindowClosed;
 }
 
-bool __cdecl IntroFMV(LPCTSTR fileName1, LPCTSTR fileName2) {
+bool __cdecl FMV_PlayIntro(LPCTSTR fileName1, LPCTSTR fileName2) {
 	LPCTSTR fullPath;
 
 	if (!App.FFPlayLoaded)
@@ -112,10 +104,10 @@ bool __cdecl IntroFMV(LPCTSTR fileName1, LPCTSTR fileName2) {
 	WinFreeDX(0);
 
 	fullPath = GetFullPath(fileName1);
-	WinPlayFMV(fullPath, true);
+	FFPlayFMV(fullPath, true);
 
 	fullPath = GetFullPath(fileName2);
-	WinPlayFMV(fullPath, true);
+	FFPlayFMV(fullPath, true);
 
 	fmv_playing = 0;
 	if (!GtWindowClosed)
@@ -125,7 +117,7 @@ bool __cdecl IntroFMV(LPCTSTR fileName1, LPCTSTR fileName2) {
 	return GtWindowClosed;
 }
 
-void __cdecl WinPlayFMV(LPCTSTR fileName, bool isPlayback) {
+void __cdecl FFPlayFMV(LPCTSTR fileName, bool isPlayback) {
 	if (hFFplay != NULL) {
 		char extFileName[256] = { 0 };
 		char* extension;
@@ -139,11 +131,11 @@ void __cdecl WinPlayFMV(LPCTSTR fileName, bool isPlayback) {
 		for (unsigned int i = 0; i < sizeof(videoExts) / 4; ++i) {
 			memcpy(extension + 1, videoExts[i], 4);
 			if (INVALID_FILE_ATTRIBUTES != GetFileAttributes(extFileName)) {
-				ffplay_play_video(extFileName, 0, 0, 0, 100);
+				ffplay_play_video(extFileName, 0, 0, 0, ((int)Option_SFX_Volume * 10));
 				return;
 			}
 		}
-		ffplay_play_video(fileName, 0, 0, 0, 100);
+		ffplay_play_video(fileName, 0, 0, 0, ((int)Option_SFX_Volume * 10));   // Volume 0-100
 		return;
 	}
 }
