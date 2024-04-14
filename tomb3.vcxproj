@@ -102,7 +102,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
       <AdditionalOptions>/SECTION:.text,RWE /pdbaltpath:%_PDB% /ignore:4099 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>dxguid.lib;ddraw.lib;Winmm.lib;dinput8.lib;Msacm32.lib;dsound.lib;D3d9.lib;discord-rpcd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>dxguid.lib;ddraw.lib;Winmm.lib;dinput8.lib;Msacm32.lib;dsound.lib;D3d9.lib;discord-rpcd.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(ProjectDir)tomb3\newstuff\libs\discord\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
@@ -125,7 +125,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
       <AdditionalOptions>/SECTION:.text,RWE /pdbaltpath:%_PDB% /ignore:4099 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>dxguid.lib;ddraw.lib;Winmm.lib;dinput8.lib;Msacm32.lib;dsound.lib;D3d9.lib;discord-rpc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>dxguid.lib;ddraw.lib;Winmm.lib;dinput8.lib;Msacm32.lib;dsound.lib;D3d9.lib;discord-rpc.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(ProjectDir)tomb3\newstuff\libs\discord\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
