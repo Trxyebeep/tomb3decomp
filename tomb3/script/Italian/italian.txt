@@ -45,12 +45,12 @@ MP5
 Lanciarazzi
 Lanciagranate
 Razzo
-Caricatori Pistola
+Caricatore Pistola
 Cartucce Fucile a Pompa
-Caricatori Desert Eagle
-Caricatori Uzi
+Caricatore Desert Eagle
+Caricatore Uzi
 Arpioni
-Caricatori MP5
+Caricatore MP5
 Razzi
 Granate
 Kit Medico Piccolo
