@@ -35,10 +35,8 @@ end:
 /********************************************************************************************/
 
 Frontend:
-PCfmv: FMV\LOGO.RPL
-PCfmv: FMV\INTR_ITA.RPL
-fmv: FMV\SAIL_ITA.RPL
-fmv: FMV\CRSH_ITA.RPL
+fmv: FMV\LOGO.RPL
+fmv: FMV\INTR_ITA.RPL
 end:
 
 /********************************************************************************************/
